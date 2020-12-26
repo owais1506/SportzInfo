@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MatchInfo">
+
+    <!--<androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinner"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:prompt="@string/app_name"
+        android:spinnerMode="dropdown"
+        />-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_team1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:text="South Africa"
+        android:textSize="18dp"
+        android:padding="4dp"
+        android:drawableEnd="@drawable/ic_score"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_players_runs"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/tv_team1"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"/>
+
+</RelativeLayout>

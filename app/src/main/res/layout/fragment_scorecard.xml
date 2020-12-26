@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.fragment_scorecard"
+    >
+    <com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/appBarLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppBarOverlay"
+    >
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:tabIndicatorColor="@android:color/white"
+        app:tabIndicatorHeight="8dp"
+        app:tabSelectedTextColor="@color/tabSelectedIconColor"
+        app:tabTextAppearance="@style/CustomTextStyle"
+        app:tabTextColor="@color/tabUnselectedIconColor"
+    />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager1"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@id/appBarLayoutMain"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        />
+
+</RelativeLayout>
